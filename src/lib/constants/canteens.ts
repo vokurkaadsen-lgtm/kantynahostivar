@@ -52,23 +52,5 @@ export const canteens = [
             street: "Ke Kablu 971/1",
             city: "Praha 10, Hostivař"
         }
-    },
-    {
-        heading: "ZF STARÁ",
-        headingBold: "BOLESLAV",
-        imageUrl: "/images/zf.svg",
-        type: "FIREMNÍ KANTÝNA",
-        openningTime: {
-            dayOfWeek: "Každý všední den",
-            time: "07:00–19:30"
-        },
-        conatct: {
-            phone: "+420 739 725 125",
-            email: "info@kantynahostivar.cz"
-        },
-        adress: {
-            street: "Hlavenec 161",
-            city: "294 74 Hlavenec"
-        }
-    },
+    }
 ]

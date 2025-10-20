@@ -7,11 +7,9 @@ const defaultLayoutValue = canteens.length
 
 const UseCanteenContext = createContext<UseCanteenContextType | undefined>(undefined)
 
-export type LayoutType = number
-
 export type UseCanteenContextType = {
-    layout: LayoutType,
-    setLayout: React.Dispatch<React.SetStateAction<LayoutType>>
+    layout: number,
+    setLayout: React.Dispatch<React.SetStateAction<number>>
     layoutBasicIndex: number
 }
 
@@ -20,7 +18,7 @@ export type CanteenProviderProps = {
 }
 
 export const UseCanteenProvider = ({children}: CanteenProviderProps) => {
-    const [layout, setLayout] = useState<LayoutType>(defaultLayoutValue as LayoutType)
+    const [layout, setLayout] = useState<number>(defaultLayoutValue)
     const layoutBasicIndex = defaultLayoutValue
 
     return (

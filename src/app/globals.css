@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.kh-bg-gradient {
+    background: linear-gradient(to bottom right, #ffffff00 29%, #c4dc82a0 55%, #ffffff 79%);
+}

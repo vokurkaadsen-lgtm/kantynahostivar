@@ -17,12 +17,10 @@ const Feature = ({index}: FetureProps) => {
         <div>
             <Image 
                 src={features[index].imageUrl}
-                width={500}
-                height={500}
+                width={50}
+                height={50}
                 alt={features[index].heading}
-            >
-
-            </Image>
+            />
         </div>
 
         <div>

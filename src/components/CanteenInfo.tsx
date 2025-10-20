@@ -2,7 +2,6 @@ import React from 'react'
 import { canteens } from '@/lib/constants/canteens'
 import CanteenLogo from './CanteenLogo'
 import { useCanteenContext } from '@/lib/context/canteenContext'
-import type { LayoutType } from '@/lib/types'
 import Map from './Map'
 
 type CanteeInfoProps = {
@@ -29,9 +28,9 @@ const CanteenInfo = ({index}: CanteeInfoProps) => {
                     {canteens[index].type}
                 </h3>
 
-                <button onClick={() => setLayout(index as LayoutType)}>Menu</button>
+                <button onClick={() => setLayout(index)}>Menu</button>
             </>
-        ) : layout === index as LayoutType ? (
+        ) : layout === index ? (
             <>
                 {/* line */}
 

@@ -1,12 +1,23 @@
 "use client"
 
 import React, {useState, useContext, createContext} from "react"
-import type { LayoutType, UseCanteenContextType, CanteenProviderProps } from "../types"
 import { canteens } from "../constants/canteens"
 
 const defaultLayoutValue = canteens.length
 
 const UseCanteenContext = createContext<UseCanteenContextType | undefined>(undefined)
+
+export type LayoutType = number
+
+export type UseCanteenContextType = {
+    layout: LayoutType,
+    setLayout: React.Dispatch<React.SetStateAction<LayoutType>>
+    layoutBasicIndex: number
+}
+
+export type CanteenProviderProps = {
+    children: React.ReactNode
+}
 
 export const UseCanteenProvider = ({children}: CanteenProviderProps) => {
     const [layout, setLayout] = useState<LayoutType>(defaultLayoutValue as LayoutType)

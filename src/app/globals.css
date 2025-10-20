@@ -12,12 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -27,4 +27,35 @@ body {
 
 .kh-bg-gradient {
     background: linear-gradient(to bottom right, #ffffff00 29%, #c4dc82a0 55%, #ffffff 79%);
+}
+
+.text-gray-3 {
+    --tw-text-opacity: 1;
+    color: rgb(135 135 135 / var(--tw-text-opacity));
+}
+
+.text-canteen-2 {
+    --tw-text-opacity: 1;
+    color: rgb(149 193 31 / var(--tw-text-opacity));
+}
+
+@layer components {
+    .bg-canteen-2 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(149 193 31 / var(--tw-bg-opacity));
+    }
+}
+
+@layer base {
+    h1 {
+        --tw-text-opacity: 1;
+        color: rgb(135 135 135 / var(--tw-text-opacity));
+        @apply text-4xl lg:text-5xl font-extrabold mt-14 mb-7
+    }
+
+    @media (min-width: 1024px) {
+    h1 {
+      line-height: 1.18;
+    }
+  }
 }

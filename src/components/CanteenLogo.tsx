@@ -16,22 +16,13 @@ const CanteenLogo = ({index}: CanteenLogoProps) => {
 
   return (
     <div>
-        <div>
-            <Image
-                src={canteens[index].imageUrl}
-                width={500}
-                height={500}
-                alt={`Kantýna ${canteens[index].heading} ${canteens[index].headingBold}`}
-                onClick={() => setLayout(index)}
-            />
-
-            {/* <div>
-                <h3>
-                    {canteens[index].heading}<br/>
-                    {canteens[index].headingBold}
-                </h3>
-            </div> */}
-        </div>
+        <Image
+            src={canteens[index].imageUrl}
+            width={300}
+            height={300}
+            alt={`Kantýna ${canteens[index].heading} ${canteens[index].headingBold}`}
+            onClick={() => setLayout(index)}
+        />
     </div>
   )
 }

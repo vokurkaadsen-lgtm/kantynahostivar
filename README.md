@@ -36,4 +36,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-// PRO PANA 
+// PRO PANA KUBCE 
+strávený čas prací na doposavadním výsledku cca 2h a 45m
+projekt je psán v angličtině
+projekt obsahuje dvě adresy url: "/" a "/choosecanteen"
+domovská adresa obsahuje úvodní sekci
+choosecanteen adresa obsahuje rozbalovací tlačítka s náhledem menu
+src directory obsahuje app, components, lib podsložky
+app obsahuje page.tsx componenty
+components obsahuje vlastní komponenty
+lib directory obsahuje context, constants podsložky
+constants obsahuje text/informace o kantýnách, resp. soubory s těmito informacemi, jako jsou adresy, kontakt atd, lze je tak snadno a přehledně upravovat
+context obsahuje kontext, pro zobrazování/renderování komponent na základě hodnoty kontextu

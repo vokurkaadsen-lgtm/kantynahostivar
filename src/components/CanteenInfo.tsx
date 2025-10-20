@@ -3,6 +3,7 @@ import { canteens } from '@/lib/constants/canteens'
 import CanteenLogo from './CanteenLogo'
 import { useCanteenContext } from '@/lib/context/canteenContext'
 import Map from './Map'
+import Menu from './Menu'
 import { cn } from '@/lib/utils'
 
 type CanteeInfoProps = {
@@ -25,7 +26,7 @@ const CanteenInfo = ({index}: CanteeInfoProps) => {
 
         {layout === layoutBasicIndex ? (
                 <div>
-                    <h3 className={cn('text-sm lg:text-base font-extrabold uppercase text-gray-3 ml-4 mt-8 mb-6 lg:mt-10', canteens[index].type === "VEŘEJNÁ KANTÝNA" && ('text-orange-500'))}>
+                    <h3 className={cn('text-sm lg:text-base font-extrabold uppercase text-gray-3 md:ml-4 mt-8 mb-6 lg:mt-10', canteens[index].type === "VEŘEJNÁ KANTÝNA" && ('text-orange-500'))}>
                         {canteens[index].type}
                     </h3>
 
@@ -62,7 +63,11 @@ const CanteenInfo = ({index}: CanteeInfoProps) => {
                     <p className='text-md lg:text-base font-semibold text-gray-3'>{canteens[index].adress.city}</p> 
                 </div>   
 
-                <Map />          
+                <Map />    
+
+                <div className='block -mx-40 md:hidden'>
+                    <Menu />
+                </div>      
             </div>
         ) : (
             null

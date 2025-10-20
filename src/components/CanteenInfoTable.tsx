@@ -25,7 +25,7 @@ const CanteenInfoTable = () => {
         ) : (
             <>
                 <div className='flex flex-row'>
-                    <div className='mr-10'>
+                    <div className='md:mr-10'>
                         <h2 className='text-sm lg:text-base font-extrabold uppercase text-gray-3 mx-auto my-5 lg:py-6'>Vyberte si kantýnu</h2>
 
                         <div className='ml-10 flex flex-col gap-12 xl:gap-16'>
@@ -37,7 +37,9 @@ const CanteenInfoTable = () => {
                         </div>
                     </div>
 
-                    <Menu />
+                    <div className='hidden md:block'>
+                        <Menu />
+                    </div>
                 </div>
             </>
         )}
